@@ -1,0 +1,5 @@
+{
+    "name": "Effx CLI CI Workflow",
+    "description": "Workflow template to use the Effx CLI",
+    "iconName": "effx-logo"
+}
