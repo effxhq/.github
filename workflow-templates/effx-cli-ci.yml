@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: effxhq/effx-lint-action@master
+      - uses: effxhq/effx-lint-action@v1
         with:
           directory: ${GITHUB_WORKSPACE}
   sync-all:
@@ -15,7 +15,7 @@ jobs:
     if: github.ref == 'refs/heads/master'
     steps:
       - uses: actions/checkout@v2
-      - uses: effxhq/effx-sync-action@master
+      - uses: effxhq/effx-sync-action@v1
         with:
           directory: ${GITHUB_WORKSPACE}
         env:
